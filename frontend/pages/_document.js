@@ -10,7 +10,7 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <meta charset="utf-8" />
+          <meta charSet="utf-8" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <link
             rel="stylesheet"
@@ -21,7 +21,7 @@ class MyDocument extends Document {
             src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
           ></script>
         </Head>
-        <body>
+        <body className="has-navbar-fixed-top">
           <Main />
           <NextScript />
         </body>

@@ -93,6 +93,385 @@ module.exports =
 /************************************************************************/
 /******/ ({
 
+/***/ "./components/Header.js":
+/*!******************************!*\
+  !*** ./components/Header.js ***!
+  \******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "/app/components/Header.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+const Header = ({
+  title,
+  subtitle
+}) => {
+  return __jsx("section", {
+    className: "hero ",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 5,
+      columnNumber: 5
+    }
+  }, __jsx("div", {
+    className: "hero-body",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6,
+      columnNumber: 7
+    }
+  }, __jsx("div", {
+    className: "container",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7,
+      columnNumber: 9
+    }
+  }, __jsx("h1", {
+    className: "title",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8,
+      columnNumber: 11
+    }
+  }, title), __jsx("h2", {
+    className: "subtitle",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9,
+      columnNumber: 11
+    }
+  }, subtitle))));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Header);
+
+/***/ }),
+
+/***/ "./components/Layout.js":
+/*!******************************!*\
+  !*** ./components/Layout.js ***!
+  \******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/head */ "next/head");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _NavBar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./NavBar */ "./components/NavBar.js");
+/* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Header */ "./components/Header.js");
+var _jsxFileName = "/app/components/Layout.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+
+
+const Layout = ({
+  title,
+  subtitle,
+  children
+}) => {
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(next_head__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9,
+      columnNumber: 7
+    }
+  }, __jsx("title", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10,
+      columnNumber: 9
+    }
+  }, title)), __jsx(_NavBar__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12,
+      columnNumber: 7
+    }
+  }), __jsx(_Header__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    title: title,
+    subtitle: subtitle,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13,
+      columnNumber: 7
+    }
+  }), __jsx("div", {
+    className: "container",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14,
+      columnNumber: 7
+    }
+  }, children));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Layout);
+
+/***/ }),
+
+/***/ "./components/NavBar.js":
+/*!******************************!*\
+  !*** ./components/NavBar.js ***!
+  \******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "/app/components/NavBar.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+const NavBar = () => {
+  return __jsx("nav", {
+    className: "navbar is-fixed-top is-dark",
+    role: "navigation",
+    "aria-label": "main navigation",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 5,
+      columnNumber: 5
+    }
+  }, __jsx("div", {
+    className: "navbar-brand",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10,
+      columnNumber: 7
+    }
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11,
+      columnNumber: 9
+    }
+  }, __jsx("a", {
+    className: "navbar-item",
+    href: "https://bulma.io",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13,
+      columnNumber: 9
+    }
+  }, __jsx("span", {
+    className: "title is-4 has-text-white",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14,
+      columnNumber: 11
+    }
+  }, "YourPlaces"))), __jsx("a", {
+    role: "button",
+    className: "navbar-burger burger",
+    "aria-label": "menu",
+    "aria-expanded": "false",
+    "data-target": "navbarBasicExample",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18,
+      columnNumber: 9
+    }
+  }, __jsx("span", {
+    "aria-hidden": "true",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25,
+      columnNumber: 11
+    }
+  }), __jsx("span", {
+    "aria-hidden": "true",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26,
+      columnNumber: 11
+    }
+  }), __jsx("span", {
+    "aria-hidden": "true",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 27,
+      columnNumber: 11
+    }
+  }))), __jsx("div", {
+    id: "navbarBasicExample",
+    className: "navbar-menu",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 31,
+      columnNumber: 7
+    }
+  }, __jsx("div", {
+    className: "navbar-start",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 32,
+      columnNumber: 9
+    }
+  }, __jsx("a", {
+    className: "navbar-item",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 35,
+      columnNumber: 11
+    }
+  }, "Documentation"), __jsx("div", {
+    className: "navbar-item has-dropdown is-hoverable",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 37,
+      columnNumber: 11
+    }
+  }, __jsx("a", {
+    className: "navbar-link",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 38,
+      columnNumber: 13
+    }
+  }, "More"), __jsx("div", {
+    className: "navbar-dropdown",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 40,
+      columnNumber: 13
+    }
+  }, __jsx("a", {
+    className: "navbar-item",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 41,
+      columnNumber: 15
+    }
+  }, "About"), __jsx("a", {
+    className: "navbar-item",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 42,
+      columnNumber: 15
+    }
+  }, "Jobs"), __jsx("a", {
+    className: "navbar-item",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 43,
+      columnNumber: 15
+    }
+  }, "Contact"), __jsx("hr", {
+    className: "navbar-divider",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 44,
+      columnNumber: 15
+    }
+  }), __jsx("a", {
+    className: "navbar-item",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 45,
+      columnNumber: 15
+    }
+  }, "Report an issue")))), __jsx("div", {
+    className: "navbar-end",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 50,
+      columnNumber: 9
+    }
+  }, __jsx("div", {
+    className: "navbar-item",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 51,
+      columnNumber: 11
+    }
+  }, __jsx("div", {
+    className: "buttons",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 52,
+      columnNumber: 13
+    }
+  }, __jsx("a", {
+    className: "button is-primary",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 53,
+      columnNumber: 15
+    }
+  }, __jsx("strong", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 54,
+      columnNumber: 17
+    }
+  }, "Sign up")), __jsx("a", {
+    className: "button is-light",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 56,
+      columnNumber: 15
+    }
+  }, "Log in"))))));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (NavBar);
+
+/***/ }),
+
 /***/ "./components/UserItem.js":
 /*!********************************!*\
   !*** ./components/UserItem.js ***!
@@ -121,40 +500,40 @@ const UserItem = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7,
-      columnNumber: 1
+      lineNumber: 6,
+      columnNumber: 5
     }
   }, __jsx("a", {
     className: "box",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8,
-      columnNumber: 5
+      lineNumber: 7,
+      columnNumber: 7
     }
   }, __jsx("article", {
     className: "media",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10,
-      columnNumber: 7
+      lineNumber: 8,
+      columnNumber: 9
     }
   }, __jsx("div", {
     className: "media-left",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11,
-      columnNumber: 9
+      lineNumber: 9,
+      columnNumber: 11
     }
   }, __jsx("figure", {
-    className: "image is-48x48",
+    className: "image is-64x64 is-1by1",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12,
-      columnNumber: 11
+      lineNumber: 10,
+      columnNumber: 13
     }
   }, __jsx("img", {
     className: "is-rounded",
@@ -163,85 +542,110 @@ const UserItem = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13,
-      columnNumber: 13
+      lineNumber: 11,
+      columnNumber: 15
     }
   }))), __jsx("div", {
     className: "media-content",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16,
-      columnNumber: 9
+      lineNumber: 14,
+      columnNumber: 11
     }
   }, __jsx("div", {
     className: "content",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17,
-      columnNumber: 11
+      lineNumber: 15,
+      columnNumber: 13
     }
   }, __jsx("p", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18,
-      columnNumber: 13
+      lineNumber: 16,
+      columnNumber: 15
     }
   }, __jsx("strong", {
+    className: "title is-4",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19,
-      columnNumber: 15
+      lineNumber: 17,
+      columnNumber: 17
     }
   }, name), __jsx("br", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20,
-      columnNumber: 15
+      lineNumber: 18,
+      columnNumber: 17
     }
-  }))), __jsx("nav", {
+  }))), __jsx("div", {
     className: "level is-mobile",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23,
-      columnNumber: 11
+      lineNumber: 21,
+      columnNumber: 13
     }
   }, __jsx("div", {
     className: "control",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24,
-      columnNumber: 13
+      lineNumber: 22,
+      columnNumber: 15
     }
   }, __jsx("div", {
-    className: "tags has-addons",
+    className: "tags has-addons ",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 23,
+      columnNumber: 17
+    }
+  }, __jsx("span", {
+    className: "tag is-dark is-medium",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 24,
+      columnNumber: 19
+    }
+  }, __jsx("span", {
+    className: "icon level-left",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 25,
-      columnNumber: 15
+      columnNumber: 21
     }
-  }, __jsx("span", {
-    className: "tag is-dark",
+  }, __jsx("i", {
+    className: "fas fa-map-marked-alt ",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 26,
-      columnNumber: 17
+      columnNumber: 23
     }
-  }, "places"), __jsx("span", {
-    className: "tag is-info",
+  })), __jsx("span", {
+    className: "level-right",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27,
-      columnNumber: 17
+      lineNumber: 28,
+      columnNumber: 21
+    }
+  }, places > 1 ? "places" : "place")), __jsx("span", {
+    className: "tag is-info is-medium",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 32,
+      columnNumber: 19
     }
   }, places))))))));
 };
@@ -1982,8 +2386,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _components_UsersList__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/UsersList */ "./components/UsersList.js");
+/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
 var _jsxFileName = "/app/pages/index.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 
 
 
@@ -2009,87 +2415,56 @@ const Home = () => {
     places: 4,
     image: "https://images.unsplash.com/photo-1544723795-3fb6469f5b39?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
   }];
-  return __jsx("section", {
-    className: "hero",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 36,
-      columnNumber: 5
-    }
-  }, __jsx("div", {
-    className: "hero-body",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 37,
-      columnNumber: 7
-    }
-  }, __jsx("div", {
-    className: "container",
+  return __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    title: "Users",
+    subtitle: "list of current users",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 38,
-      columnNumber: 9
+      columnNumber: 5
     }
-  }, __jsx("h1", {
-    className: "title",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 39,
-      columnNumber: 11
-    }
-  }, "Hero title"), __jsx("h2", {
-    className: "subtitle",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 40,
-      columnNumber: 11
-    }
-  }, "Hero subtitle"), __jsx("div", {
+  }, __jsx("div", {
     className: "columns",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41,
-      columnNumber: 11
+      lineNumber: 39,
+      columnNumber: 5
     }
   }, __jsx("div", {
     className: "column",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42,
-      columnNumber: 13
+      lineNumber: 40,
+      columnNumber: 7
     }
   }), __jsx("div", {
-    className: "column",
+    className: "column is-half",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43,
-      columnNumber: 13
+      lineNumber: 41,
+      columnNumber: 7
     }
   }, __jsx(_components_UsersList__WEBPACK_IMPORTED_MODULE_1__["default"], {
     users: users,
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44,
-      columnNumber: 15
+      lineNumber: 42,
+      columnNumber: 9
     }
   })), __jsx("div", {
     className: "column",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46,
-      columnNumber: 13
+      lineNumber: 44,
+      columnNumber: 7
     }
-  })))));
+  })));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Home);
@@ -2105,6 +2480,17 @@ const Home = () => {
 
 module.exports = __webpack_require__(/*! /app/pages/index.js */"./pages/index.js");
 
+
+/***/ }),
+
+/***/ "next/head":
+/*!****************************!*\
+  !*** external "next/head" ***!
+  \****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("next/head");
 
 /***/ }),
 

@@ -1117,7 +1117,7 @@ class MyDocument extends next_document__WEBPACK_IMPORTED_MODULE_1___default.a {
         columnNumber: 9
       }
     }, __jsx("meta", {
-      charset: "utf-8",
+      charSet: "utf-8",
       __self: this,
       __source: {
         fileName: _jsxFileName,
@@ -1152,6 +1152,7 @@ class MyDocument extends next_document__WEBPACK_IMPORTED_MODULE_1___default.a {
         columnNumber: 11
       }
     })), __jsx("body", {
+      className: "has-navbar-fixed-top",
       __self: this,
       __source: {
         fileName: _jsxFileName,

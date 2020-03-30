@@ -1,5 +1,6 @@
 import React from "react";
 import UsersList from "../components/UsersList";
+import Layout from "../components/Layout";
 
 const Home = () => {
   const users = [
@@ -33,21 +34,16 @@ const Home = () => {
     }
   ];
   return (
-    <section className="hero">
-      <div className="hero-body">
-        <div className="container">
-          <h1 className="title">Hero title</h1>
-          <h2 className="subtitle">Hero subtitle</h2>
-          <div className="columns">
-            <div className="column"></div>
-            <div className="column">
-              <UsersList users={users} />
-            </div>
-            <div className="column"></div>
-          </div>
-        </div>
+    
+    <Layout title='Users' subtitle='list of current users'>
+    <div className="columns">
+      <div className="column"></div>
+      <div className="column is-half">
+        <UsersList users={users} />
       </div>
-    </section>
+      <div className="column"></div>
+    </div>
+    </Layout>
   );
 };
 
