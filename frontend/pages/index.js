@@ -2,7 +2,8 @@ import React from "react";
 import UsersList from "../components/UsersList";
 import Layout from "../components/Layout";
 
-const Home = () => {
+const Home = (props) => {
+  console.log(props)
   const users = [
     {
       id: "u1",

@@ -110,6 +110,7 @@ var Layout = function Layout(_ref) {
       columnNumber: 9
     }
   }, title)), __jsx(_NavBar__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    title: title,
     __self: _this,
     __source: {
       fileName: _jsxFileName,
@@ -149,234 +150,305 @@ var Layout = function Layout(_ref) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/slicedToArray */ "./node_modules/@babel/runtime/helpers/esm/slicedToArray.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/router */ "./node_modules/next/dist/client/router.js");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_3__);
+
+
 var _this = undefined,
     _jsxFileName = "/app/components/NavBar.js";
 
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
 
-var NavBar = function NavBar() {
-  return __jsx("nav", {
-    className: "navbar is-fixed-top is-dark",
-    role: "navigation",
-    "aria-label": "main navigation",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5,
-      columnNumber: 5
-    }
-  }, __jsx("div", {
-    className: "navbar-brand",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10,
-      columnNumber: 7
-    }
-  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 11,
-      columnNumber: 9
-    }
-  }, __jsx("a", {
-    className: "navbar-item",
-    href: "https://bulma.io",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 13,
-      columnNumber: 9
-    }
-  }, __jsx("span", {
-    className: "title is-4 has-text-white",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 14,
-      columnNumber: 11
-    }
-  }, "YourPlaces"))), __jsx("a", {
-    role: "button",
-    className: "navbar-burger burger",
-    "aria-label": "menu",
-    "aria-expanded": "false",
-    "data-target": "navbarBasicExample",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 18,
-      columnNumber: 9
-    }
-  }, __jsx("span", {
-    "aria-hidden": "true",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 25,
-      columnNumber: 11
-    }
-  }), __jsx("span", {
-    "aria-hidden": "true",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 26,
-      columnNumber: 11
-    }
-  }), __jsx("span", {
-    "aria-hidden": "true",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 27,
-      columnNumber: 11
-    }
-  }))), __jsx("div", {
-    id: "navbarBasicExample",
-    className: "navbar-menu",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 31,
-      columnNumber: 7
-    }
-  }, __jsx("div", {
-    className: "navbar-start",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 32,
-      columnNumber: 9
-    }
-  }, __jsx("a", {
-    className: "navbar-item",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 35,
-      columnNumber: 11
-    }
-  }, "Documentation"), __jsx("div", {
-    className: "navbar-item has-dropdown is-hoverable",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 37,
-      columnNumber: 11
-    }
-  }, __jsx("a", {
-    className: "navbar-link",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 38,
-      columnNumber: 13
-    }
-  }, "More"), __jsx("div", {
-    className: "navbar-dropdown",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 40,
-      columnNumber: 13
-    }
-  }, __jsx("a", {
-    className: "navbar-item",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 41,
-      columnNumber: 15
-    }
-  }, "About"), __jsx("a", {
-    className: "navbar-item",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 42,
-      columnNumber: 15
-    }
-  }, "Jobs"), __jsx("a", {
-    className: "navbar-item",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 43,
-      columnNumber: 15
-    }
-  }, "Contact"), __jsx("hr", {
-    className: "navbar-divider",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 44,
-      columnNumber: 15
-    }
-  }), __jsx("a", {
-    className: "navbar-item",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 45,
-      columnNumber: 15
-    }
-  }, "Report an issue")))), __jsx("div", {
-    className: "navbar-end",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 50,
-      columnNumber: 9
-    }
-  }, __jsx("div", {
-    className: "navbar-item",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 51,
-      columnNumber: 11
-    }
-  }, __jsx("div", {
-    className: "buttons",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 52,
-      columnNumber: 13
-    }
-  }, __jsx("a", {
-    className: "button is-primary",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 53,
-      columnNumber: 15
-    }
-  }, __jsx("strong", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 54,
-      columnNumber: 17
-    }
-  }, "Sign up")), __jsx("a", {
-    className: "button is-light",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 56,
-      columnNumber: 15
-    }
-  }, "Log in"))))));
+
+var NavBar = function NavBar(_ref) {
+  var title = _ref.title;
+
+  var _React$useState = react__WEBPACK_IMPORTED_MODULE_1___default.a.useState(false),
+      _React$useState2 = Object(_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__["default"])(_React$useState, 2),
+      activeItem = _React$useState2[0],
+      setActiveItem = _React$useState2[1];
+
+  return (
+    /*    <nav
+         className="navbar is-fixed-top is-dark"
+         role="navigation"
+         aria-label="main navigation"
+       >
+         <div className="navbar-brand">
+           <Link href='/'>
+          
+           <a className="navbar-item" href="https://bulma.io">
+             <span className="title is-4 has-text-white">YourPlaces</span>
+             
+           </a>
+           </Link>
+           <a
+             role="button"
+             className={`navbar-burger burger ${activeItem ? 'is-active ' : null}`}
+             aria-label="menu"
+             aria-expanded="false"
+             data-target="navbarBasicExample"
+             onClick={()=>setActiveItem(!activeItem)}
+           >
+             <span aria-hidden="true"></span>
+             <span aria-hidden="true"></span>
+             <span aria-hidden="true"></span>
+           </a>
+         </div>
+          <div id="navbarBasicExample" className={`navbar-menu ${activeItem ? 'is-active' : null}`}>
+           <div className="navbar-start">
+            
+           </div>
+            <div className="navbar-end">
+             <Link href='/' >
+             <a className={`navbar-item ${title === 'Users' ? 'is-active' : null}`}>All Users</a>
+             </Link>
+           
+             
+           <Link href='/myplaces' >
+           <a className={`navbar-item ${title === 'My Places' ? 'is-active' : null}`}>My Places</a>
+           </Link>
+           <Link href='/addplace'>
+           <a className="navbar-item">Add Place</a>
+           </Link>
+           
+             <div className="navbar-item">
+               <div className="buttons">
+                 <a className="button is-primary">
+                   <strong>Authenticate</strong>
+                 </a>
+        
+               </div>
+             </div>
+           </div>
+         </div>
+       </nav> */
+    __jsx("nav", {
+      "class": "navbar",
+      role: "navigation",
+      "aria-label": "main navigation",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 66,
+        columnNumber: 5
+      }
+    }, __jsx("div", {
+      "class": "navbar-brand",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 67,
+        columnNumber: 3
+      }
+    }, __jsx("a", {
+      "class": "navbar-item",
+      href: "https://bulma.io",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 68,
+        columnNumber: 5
+      }
+    }, __jsx("img", {
+      src: "https://bulma.io/images/bulma-logo.png",
+      width: "112",
+      height: "28",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 69,
+        columnNumber: 7
+      }
+    })), __jsx("a", {
+      role: "button",
+      "class": "navbar-burger burger",
+      "aria-label": "menu",
+      "aria-expanded": "false",
+      "data-target": "navbarBasicExample",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 72,
+        columnNumber: 5
+      }
+    }, __jsx("span", {
+      "aria-hidden": "true",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 73,
+        columnNumber: 7
+      }
+    }), __jsx("span", {
+      "aria-hidden": "true",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 74,
+        columnNumber: 7
+      }
+    }), __jsx("span", {
+      "aria-hidden": "true",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 75,
+        columnNumber: 7
+      }
+    }))), __jsx("div", {
+      id: "navbarBasicExample",
+      "class": "navbar-menu is-active",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 79,
+        columnNumber: 3
+      }
+    }, __jsx("div", {
+      "class": "navbar-start",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 80,
+        columnNumber: 5
+      }
+    }, __jsx("a", {
+      "class": "navbar-item",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 81,
+        columnNumber: 7
+      }
+    }, "Home"), __jsx("a", {
+      "class": "navbar-item",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 85,
+        columnNumber: 7
+      }
+    }, "Documentation"), __jsx("div", {
+      "class": "navbar-item has-dropdown is-hoverable",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 89,
+        columnNumber: 7
+      }
+    }, __jsx("a", {
+      "class": "navbar-link",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 90,
+        columnNumber: 9
+      }
+    }, "More"), __jsx("div", {
+      "class": "navbar-dropdown",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 94,
+        columnNumber: 9
+      }
+    }, __jsx("a", {
+      "class": "navbar-item",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 95,
+        columnNumber: 11
+      }
+    }, "About"), __jsx("a", {
+      "class": "navbar-item",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 98,
+        columnNumber: 11
+      }
+    }, "Jobs"), __jsx("a", {
+      "class": "navbar-item",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 101,
+        columnNumber: 11
+      }
+    }, "Contact"), __jsx("hr", {
+      "class": "navbar-divider",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 104,
+        columnNumber: 11
+      }
+    }), __jsx("a", {
+      "class": "navbar-item",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 105,
+        columnNumber: 11
+      }
+    }, "Report an issue")))), __jsx("div", {
+      "class": "navbar-end",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 112,
+        columnNumber: 5
+      }
+    }, __jsx("div", {
+      "class": "navbar-item",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 113,
+        columnNumber: 7
+      }
+    }, __jsx("div", {
+      "class": "buttons",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 114,
+        columnNumber: 9
+      }
+    }, __jsx("a", {
+      "class": "button is-primary",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 115,
+        columnNumber: 11
+      }
+    }, __jsx("strong", {
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 116,
+        columnNumber: 13
+      }
+    }, "Sign up")), __jsx("a", {
+      "class": "button is-light",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 118,
+        columnNumber: 11
+      }
+    }, "Log in"))))))
+  );
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (NavBar);
@@ -753,6 +825,102 @@ function _createClass(Constructor, protoProps, staticProps) {
 }
 
 module.exports = _createClass;
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/esm/arrayWithHoles.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/arrayWithHoles.js ***!
+  \*******************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _arrayWithHoles; });
+function _arrayWithHoles(arr) {
+  if (Array.isArray(arr)) return arr;
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/esm/iterableToArrayLimit.js":
+/*!*************************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/iterableToArrayLimit.js ***!
+  \*************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _iterableToArrayLimit; });
+function _iterableToArrayLimit(arr, i) {
+  if (!(Symbol.iterator in Object(arr) || Object.prototype.toString.call(arr) === "[object Arguments]")) {
+    return;
+  }
+
+  var _arr = [];
+  var _n = true;
+  var _d = false;
+  var _e = undefined;
+
+  try {
+    for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) {
+      _arr.push(_s.value);
+
+      if (i && _arr.length === i) break;
+    }
+  } catch (err) {
+    _d = true;
+    _e = err;
+  } finally {
+    try {
+      if (!_n && _i["return"] != null) _i["return"]();
+    } finally {
+      if (_d) throw _e;
+    }
+  }
+
+  return _arr;
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/esm/nonIterableRest.js":
+/*!********************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/nonIterableRest.js ***!
+  \********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _nonIterableRest; });
+function _nonIterableRest() {
+  throw new TypeError("Invalid attempt to destructure non-iterable instance");
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/esm/slicedToArray.js":
+/*!******************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/slicedToArray.js ***!
+  \******************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _slicedToArray; });
+/* harmony import */ var _arrayWithHoles__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./arrayWithHoles */ "./node_modules/@babel/runtime/helpers/esm/arrayWithHoles.js");
+/* harmony import */ var _iterableToArrayLimit__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./iterableToArrayLimit */ "./node_modules/@babel/runtime/helpers/esm/iterableToArrayLimit.js");
+/* harmony import */ var _nonIterableRest__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./nonIterableRest */ "./node_modules/@babel/runtime/helpers/esm/nonIterableRest.js");
+
+
+
+function _slicedToArray(arr, i) {
+  return Object(_arrayWithHoles__WEBPACK_IMPORTED_MODULE_0__["default"])(arr) || Object(_iterableToArrayLimit__WEBPACK_IMPORTED_MODULE_1__["default"])(arr, i) || Object(_nonIterableRest__WEBPACK_IMPORTED_MODULE_2__["default"])();
+}
 
 /***/ }),
 
@@ -5379,7 +5547,8 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-var Home = function Home() {
+var Home = function Home(props) {
+  console.log(props);
   var users = [{
     id: "u1",
     name: "Christophe",
@@ -5407,7 +5576,7 @@ var Home = function Home() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38,
+      lineNumber: 39,
       columnNumber: 5
     }
   }, __jsx("div", {
@@ -5415,7 +5584,7 @@ var Home = function Home() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39,
+      lineNumber: 40,
       columnNumber: 5
     }
   }, __jsx("div", {
@@ -5423,7 +5592,7 @@ var Home = function Home() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40,
+      lineNumber: 41,
       columnNumber: 7
     }
   }), __jsx("div", {
@@ -5431,7 +5600,7 @@ var Home = function Home() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41,
+      lineNumber: 42,
       columnNumber: 7
     }
   }, __jsx(_components_UsersList__WEBPACK_IMPORTED_MODULE_1__["default"], {
@@ -5439,7 +5608,7 @@ var Home = function Home() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42,
+      lineNumber: 43,
       columnNumber: 9
     }
   })), __jsx("div", {
@@ -5447,7 +5616,7 @@ var Home = function Home() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44,
+      lineNumber: 45,
       columnNumber: 7
     }
   })));

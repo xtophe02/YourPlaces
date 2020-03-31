@@ -9,7 +9,7 @@ const Layout = ({ title, subtitle, children }) => {
       <Head>
         <title>{title}</title>
       </Head>
-      <NavBar />
+      <NavBar title={title}/>
       <Header title={title} subtitle={subtitle} />
       <div className="container">
       {children}
