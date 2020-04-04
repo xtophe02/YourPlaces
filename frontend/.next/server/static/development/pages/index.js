@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -394,7 +394,7 @@ const NavBar = ({
       columnNumber: 13
     }
   }, "My Places")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/addplace",
+    href: "/addPlace",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
@@ -729,13 +729,13 @@ exports.places = [{
   creator: 'u2'
 }, {
   id: 'p3',
-  title: 'Empire State Building',
-  description: 'One of the most famous sky scrapers in the world!',
-  imageUrl: 'https://images.unsplash.com/photo-1543969082-0d5eb654c698?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
-  address: '20 W 34th St, New York, NY 10001',
+  title: 'Eiffel Tower',
+  description: "Constructed from 1887 to 1889 as the entrance to the 1889 World's Fair, it was initially criticised by some of France's leading artists and intellectuals for its design, but it has become a global cultural icon of France and one of the most recognisable structures in the world. The Eiffel Tower is the most-visited paid monument in the world; 6.91 million people ascended it in 2015. ",
+  imageUrl: 'https://images.unsplash.com/photo-1549271456-0c1e6f59ab66?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
+  address: 'Champ de Mars, 5 Avenue Anatole France, 75007 Paris, France',
   location: {
-    lat: 40.7484405,
-    lng: -73.9878584
+    lat: 48.8539241,
+    lng: 2.2913515
   },
   creator: 'u2'
 }];
@@ -2496,7 +2496,7 @@ const Home = () => {
 
 /***/ }),
 
-/***/ 3:
+/***/ 4:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/

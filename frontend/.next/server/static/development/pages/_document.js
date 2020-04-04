@@ -1151,26 +1151,36 @@ class MyDocument extends next_document__WEBPACK_IMPORTED_MODULE_1___default.a {
         lineNumber: 19,
         columnNumber: 11
       }
+    }), __jsx("script", {
+      src: "https://maps.googleapis.com/maps/api/js?key=AIzaSyDSTdxSQDqIuRj4KEH6HsfKggN7_Djc5BM",
+      async: true,
+      defer: true,
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 23,
+        columnNumber: 12
+      }
     })), __jsx("body", {
       className: "has-navbar-fixed-top",
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 24,
+        lineNumber: 27,
         columnNumber: 9
       }
     }, __jsx(next_document__WEBPACK_IMPORTED_MODULE_1__["Main"], {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 25,
+        lineNumber: 28,
         columnNumber: 11
       }
     }), __jsx(next_document__WEBPACK_IMPORTED_MODULE_1__["NextScript"], {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 26,
+        lineNumber: 29,
         columnNumber: 11
       }
     })));

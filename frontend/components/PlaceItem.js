@@ -1,7 +1,7 @@
 import React from "react";
 import Modal from './Modal'
 
-const PlaceItem = ({ title, image, address, description, creatorId }) => {
+const PlaceItem = ({ title, image, address, description, creatorId, coordinates }) => {
   const [state, setState] = React.useState(false)
   return (
     <div className="columns">
@@ -58,7 +58,7 @@ const PlaceItem = ({ title, image, address, description, creatorId }) => {
       </div>
       <div className="column"></div>
       <br />
-      <Modal state={state} setState={setState}/>
+      <Modal state={state} setState={setState} coordinates={coordinates}/>
     </div>
   );
 };

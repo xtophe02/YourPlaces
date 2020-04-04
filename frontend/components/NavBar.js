@@ -59,7 +59,7 @@ const NavBar = ({ title }) => {
               My Places
             </a>
           </Link>
-          <Link href="/addplace">
+          <Link href="/addPlace">
             <a className="navbar-item">Add Place</a>
           </Link>
 

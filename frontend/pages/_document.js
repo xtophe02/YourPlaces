@@ -20,6 +20,9 @@ class MyDocument extends Document {
             defer
             src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
           ></script>
+           <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSTdxSQDqIuRj4KEH6HsfKggN7_Djc5BM"
+    async defer></script>
+
         </Head>
         <body className="has-navbar-fixed-top">
           <Main />
