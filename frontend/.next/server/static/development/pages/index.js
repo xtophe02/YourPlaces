@@ -245,8 +245,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/router */ "next/router");
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react_transition_group__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-transition-group */ "react-transition-group");
+/* harmony import */ var react_transition_group__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_transition_group__WEBPACK_IMPORTED_MODULE_2__);
 var _jsxFileName = "/app/components/NavBar.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -257,280 +257,190 @@ const NavBar = ({
   title
 }) => {
   const [activeItem, setActiveItem] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState(false);
-  return (
-    /*    <nav
-         className="navbar is-fixed-top is-dark"
-         role="navigation"
-         aria-label="main navigation"
-       >
-         <div className="navbar-brand">
-           <Link href='/'>
-          
-           <a className="navbar-item" href="https://bulma.io">
-             <span className="title is-4 has-text-white">YourPlaces</span>
-             
-           </a>
-           </Link>
-           <a
-             role="button"
-             className={`navbar-burger burger ${activeItem ? 'is-active ' : null}`}
-             aria-label="menu"
-             aria-expanded="false"
-             data-target="navbarBasicExample"
-             onClick={()=>setActiveItem(!activeItem)}
-           >
-             <span aria-hidden="true"></span>
-             <span aria-hidden="true"></span>
-             <span aria-hidden="true"></span>
-           </a>
-         </div>
-          <div id="navbarBasicExample" className={`navbar-menu ${activeItem ? 'is-active' : null}`}>
-           <div className="navbar-start">
-            
-           </div>
-            <div className="navbar-end">
-             <Link href='/' >
-             <a className={`navbar-item ${title === 'Users' ? 'is-active' : null}`}>All Users</a>
-             </Link>
-           
-             
-           <Link href='/myplaces' >
-           <a className={`navbar-item ${title === 'My Places' ? 'is-active' : null}`}>My Places</a>
-           </Link>
-           <Link href='/addplace'>
-           <a className="navbar-item">Add Place</a>
-           </Link>
-           
-             <div className="navbar-item">
-               <div className="buttons">
-                 <a className="button is-primary">
-                   <strong>Authenticate</strong>
-                 </a>
-        
-               </div>
-             </div>
-           </div>
-         </div>
-       </nav> */
-    __jsx("nav", {
-      class: "navbar",
-      role: "navigation",
-      "aria-label": "main navigation",
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 66,
-        columnNumber: 5
-      }
-    }, __jsx("div", {
-      class: "navbar-brand",
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 67,
-        columnNumber: 3
-      }
-    }, __jsx("a", {
-      class: "navbar-item",
-      href: "https://bulma.io",
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 68,
-        columnNumber: 5
-      }
-    }, __jsx("img", {
-      src: "https://bulma.io/images/bulma-logo.png",
-      width: "112",
-      height: "28",
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 69,
-        columnNumber: 7
-      }
-    })), __jsx("a", {
-      role: "button",
-      class: "navbar-burger burger",
-      "aria-label": "menu",
-      "aria-expanded": "false",
-      "data-target": "navbarBasicExample",
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 72,
-        columnNumber: 5
-      }
-    }, __jsx("span", {
-      "aria-hidden": "true",
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 73,
-        columnNumber: 7
-      }
-    }), __jsx("span", {
-      "aria-hidden": "true",
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 74,
-        columnNumber: 7
-      }
-    }), __jsx("span", {
-      "aria-hidden": "true",
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 75,
-        columnNumber: 7
-      }
-    }))), __jsx("div", {
-      id: "navbarBasicExample",
-      class: "navbar-menu is-active",
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 79,
-        columnNumber: 3
-      }
-    }, __jsx("div", {
-      class: "navbar-start",
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 80,
-        columnNumber: 5
-      }
-    }, __jsx("a", {
-      class: "navbar-item",
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 81,
-        columnNumber: 7
-      }
-    }, "Home"), __jsx("a", {
-      class: "navbar-item",
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 85,
-        columnNumber: 7
-      }
-    }, "Documentation"), __jsx("div", {
-      class: "navbar-item has-dropdown is-hoverable",
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 89,
-        columnNumber: 7
-      }
-    }, __jsx("a", {
-      class: "navbar-link",
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 90,
-        columnNumber: 9
-      }
-    }, "More"), __jsx("div", {
-      class: "navbar-dropdown",
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 94,
-        columnNumber: 9
-      }
-    }, __jsx("a", {
-      class: "navbar-item",
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 95,
-        columnNumber: 11
-      }
-    }, "About"), __jsx("a", {
-      class: "navbar-item",
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 98,
-        columnNumber: 11
-      }
-    }, "Jobs"), __jsx("a", {
-      class: "navbar-item",
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 101,
-        columnNumber: 11
-      }
-    }, "Contact"), __jsx("hr", {
-      class: "navbar-divider",
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 104,
-        columnNumber: 11
-      }
-    }), __jsx("a", {
-      class: "navbar-item",
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 105,
-        columnNumber: 11
-      }
-    }, "Report an issue")))), __jsx("div", {
-      class: "navbar-end",
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 112,
-        columnNumber: 5
-      }
-    }, __jsx("div", {
-      class: "navbar-item",
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 113,
-        columnNumber: 7
-      }
-    }, __jsx("div", {
-      class: "buttons",
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 114,
-        columnNumber: 9
-      }
-    }, __jsx("a", {
-      class: "button is-primary",
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 115,
-        columnNumber: 11
-      }
-    }, __jsx("strong", {
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 116,
-        columnNumber: 13
-      }
-    }, "Sign up")), __jsx("a", {
-      class: "button is-light",
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 118,
-        columnNumber: 11
-      }
-    }, "Log in"))))))
-  );
+  return __jsx("nav", {
+    className: "navbar is-dark is-fixed-top",
+    role: "navigation",
+    "aria-label": "main navigation",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8,
+      columnNumber: 5
+    }
+  }, __jsx("div", {
+    className: "navbar-brand",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13,
+      columnNumber: 7
+    }
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14,
+      columnNumber: 9
+    }
+  }, __jsx("a", {
+    className: "navbar-item",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15,
+      columnNumber: 11
+    }
+  }, __jsx("span", {
+    className: "title is-4 has-text-white",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16,
+      columnNumber: 13
+    }
+  }, "YourPlaces"))), __jsx("a", {
+    role: "button",
+    className: `navbar-burger burger ${activeItem && "is-active "}`,
+    "aria-label": "menu",
+    "aria-expanded": "false",
+    "data-target": "navbarBasicExample",
+    onClick: () => setActiveItem(!activeItem),
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20,
+      columnNumber: 9
+    }
+  }, __jsx("span", {
+    "aria-hidden": "true",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 28,
+      columnNumber: 11
+    }
+  }), __jsx("span", {
+    "aria-hidden": "true",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 29,
+      columnNumber: 11
+    }
+  }), __jsx("span", {
+    "aria-hidden": "true",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30,
+      columnNumber: 11
+    }
+  }))), __jsx("div", {
+    id: "navbarBasicExample",
+    className: `navbar-menu ${activeItem && "is-active"}`,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 42,
+      columnNumber: 7
+    }
+  }, __jsx("div", {
+    className: "navbar-start",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 46,
+      columnNumber: 9
+    }
+  }), __jsx("div", {
+    className: "navbar-end",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 48,
+      columnNumber: 9
+    }
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 49,
+      columnNumber: 11
+    }
+  }, __jsx("a", {
+    className: `navbar-item ${title === "Users" && "is-active"}`,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 50,
+      columnNumber: 13
+    }
+  }, "All Users")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/userPlaces",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 55,
+      columnNumber: 11
+    }
+  }, __jsx("a", {
+    className: `navbar-item ${title === "My Places" && "is-active"}`,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 56,
+      columnNumber: 13
+    }
+  }, "My Places")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/addplace",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 62,
+      columnNumber: 11
+    }
+  }, __jsx("a", {
+    className: "navbar-item",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 63,
+      columnNumber: 13
+    }
+  }, "Add Place")), __jsx("div", {
+    className: "navbar-item",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 66,
+      columnNumber: 11
+    }
+  }, __jsx("div", {
+    className: "buttons",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 67,
+      columnNumber: 13
+    }
+  }, __jsx("a", {
+    className: "button is-primary",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 68,
+      columnNumber: 15
+    }
+  }, __jsx("strong", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 69,
+      columnNumber: 17
+    }
+  }, "Authenticate")))))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (NavBar);
@@ -558,10 +468,12 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 const UserItem = ({
   name,
   image,
-  places
+  places,
+  id
 }) => {
   return __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/opo",
+    href: "/userPlaces/[userPlaces]",
+    as: `/userPlaces/${id}`,
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
@@ -751,6 +663,7 @@ const UsersList = ({
     name: user.name,
     image: user.image,
     places: user.places,
+    id: user.id,
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
@@ -761,6 +674,71 @@ const UsersList = ({
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (UsersList);
+
+/***/ }),
+
+/***/ "./data.js":
+/*!*****************!*\
+  !*** ./data.js ***!
+  \*****************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+exports.users = [{
+  id: "u1",
+  name: "Christophe",
+  places: 2,
+  image: "https://images.unsplash.com/photo-1552072805-2a9039d00e57?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+}, {
+  id: "u2",
+  name: "Idalia",
+  places: 1,
+  image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+}, {
+  id: "u3",
+  name: "Nicole",
+  places: 3,
+  image: "https://images.unsplash.com/photo-1554151228-14d9def656e4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+}, {
+  id: "u4",
+  name: "Noah",
+  places: 4,
+  image: "https://images.unsplash.com/photo-1544723795-3fb6469f5b39?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+}];
+exports.places = [{
+  id: 'p1',
+  title: 'Empire State Building',
+  description: 'One of the most famous sky scrapers in the world!',
+  imageUrl: 'https://images.unsplash.com/photo-1550664890-c5e34a6cad31?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
+  address: '20 W 34th St, New York, NY 10001',
+  location: {
+    lat: 40.7484405,
+    lng: -73.9878584
+  },
+  creator: 'u1'
+}, {
+  id: 'p2',
+  title: 'Empire State Building',
+  description: 'One of the most famous sky scrapers in the world!',
+  imageUrl: 'https://images.unsplash.com/photo-1543969082-0d5eb654c698?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
+  address: '20 W 34th St, New York, NY 10001',
+  location: {
+    lat: 40.7484405,
+    lng: -73.9878584
+  },
+  creator: 'u2'
+}, {
+  id: 'p3',
+  title: 'Empire State Building',
+  description: 'One of the most famous sky scrapers in the world!',
+  imageUrl: 'https://images.unsplash.com/photo-1543969082-0d5eb654c698?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
+  address: '20 W 34th St, New York, NY 10001',
+  location: {
+    lat: 40.7484405,
+    lng: -73.9878584
+  },
+  creator: 'u2'
+}];
 
 /***/ }),
 
@@ -2452,42 +2430,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _components_UsersList__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/UsersList */ "./components/UsersList.js");
 /* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
+/* harmony import */ var _data__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../data */ "./data.js");
+/* harmony import */ var _data__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_data__WEBPACK_IMPORTED_MODULE_3__);
 var _jsxFileName = "/app/pages/index.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
 
-const Home = props => {
-  console.log(props);
-  const users = [{
-    id: "u1",
-    name: "Christophe",
-    places: 2,
-    image: "https://images.unsplash.com/photo-1552072805-2a9039d00e57?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
-  }, {
-    id: "u2",
-    name: "Idalia",
-    places: 1,
-    image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
-  }, {
-    id: "u3",
-    name: "Nicole",
-    places: 3,
-    image: "https://images.unsplash.com/photo-1554151228-14d9def656e4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
-  }, {
-    id: "u4",
-    name: "Noah",
-    places: 4,
-    image: "https://images.unsplash.com/photo-1544723795-3fb6469f5b39?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
-  }];
+
+const Home = () => {
   return __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_2__["default"], {
     title: "Users",
     subtitle: "list of current users",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39,
+      lineNumber: 8,
       columnNumber: 5
     }
   }, __jsx("div", {
@@ -2495,40 +2454,40 @@ const Home = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40,
-      columnNumber: 5
+      lineNumber: 9,
+      columnNumber: 7
     }
   }, __jsx("div", {
     className: "column",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41,
-      columnNumber: 7
+      lineNumber: 10,
+      columnNumber: 9
     }
   }), __jsx("div", {
     className: "column is-half",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42,
-      columnNumber: 7
+      lineNumber: 11,
+      columnNumber: 9
     }
   }, __jsx(_components_UsersList__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    users: users,
+    users: _data__WEBPACK_IMPORTED_MODULE_3__["users"],
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43,
-      columnNumber: 9
+      lineNumber: 12,
+      columnNumber: 11
     }
   })), __jsx("div", {
     className: "column",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45,
-      columnNumber: 7
+      lineNumber: 14,
+      columnNumber: 9
     }
   })));
 };
@@ -2557,17 +2516,6 @@ module.exports = __webpack_require__(/*! /app/pages/index.js */"./pages/index.js
 /***/ (function(module, exports) {
 
 module.exports = require("next/head");
-
-/***/ }),
-
-/***/ "next/router":
-/*!******************************!*\
-  !*** external "next/router" ***!
-  \******************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("next/router");
 
 /***/ }),
 
@@ -2612,6 +2560,17 @@ module.exports = require("react");
 /***/ (function(module, exports) {
 
 module.exports = require("react-is");
+
+/***/ }),
+
+/***/ "react-transition-group":
+/*!*****************************************!*\
+  !*** external "react-transition-group" ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("react-transition-group");
 
 /***/ }),
 

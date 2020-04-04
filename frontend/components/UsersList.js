@@ -10,7 +10,7 @@ const UsersList = ({ users }) => {
       ) : (
         users.map(user => 
            
-        <UserItem key={user.id} name={user.name} image={user.image} places={user.places} />
+        <UserItem key={user.id} name={user.name} image={user.image} places={user.places} id={user.id}/>
        
         )
       )}

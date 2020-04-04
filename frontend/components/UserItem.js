@@ -1,9 +1,9 @@
 import React from "react";
 import Link from "next/link";
 
-const UserItem = ({ name, image, places }) => {
+const UserItem = ({ name, image, places,id }) => {
   return (
-    <Link href="/opo">
+    <Link href="/userPlaces/[userPlaces]" as={`/userPlaces/${id}`}>
       <a className="box">
         <article className="media">
           <div className="media-left">
