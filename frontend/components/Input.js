@@ -1,7 +1,17 @@
 import React from "react";
-import {validate} from '../utils/validators'
+import { validate } from "../utils/validators";
 
-const Input = ({ type = "text", placeholder = "", name, icon = null, validators }) => {
+const Input = ({
+  type = "text",
+  placeholder = "",
+  name,
+  icon = null,
+  validators,
+  id,
+  onInput,
+  value,
+  valid
+}) => {
   const inputReducer = (state, action) => {
     switch (action.type) {
       case "CHANGE":
@@ -10,26 +20,30 @@ const Input = ({ type = "text", placeholder = "", name, icon = null, validators 
           value: action.val,
           isValid: validate(action.val, action.validators),
         };
-      
-      case 'TOUCH':
-        return{...state, isTouched: true}
+
+      case "TOUCH":
+        return { ...state, isTouched: true };
       default:
         return state;
     }
   };
 
   const [inputState, dispatch] = React.useReducer(inputReducer, {
-    value: "",
-    isValid: false,
-    isTouched: false
+    value: value || "",
+    isValid: valid || false,
+    isTouched: false,
   });
 
   const handleChange = (e) => {
     dispatch({ type: "CHANGE", val: e.target.value, validators });
   };
   const handleBlur = (e) => {
-    dispatch({ type: "TOUCH"});
+    dispatch({ type: "TOUCH" });
   };
+
+  React.useEffect(() => {
+    onInput(id, inputState.value, inputState.isValid);
+  }, [id, inputState.value, inputState.isValid, onInput]);
 
   return (
     <div className="field">
@@ -37,7 +51,10 @@ const Input = ({ type = "text", placeholder = "", name, icon = null, validators 
       <div className={`control ${icon && "has-icons-left"}`}>
         {type === "textarea" ? (
           <textarea
-            className={`textarea ${!inputState.isValid && inputState.isTouched && 'is-danger'}`}
+            id={id}
+            className={`textarea ${
+              !inputState.isValid && inputState.isTouched && "is-danger"
+            }`}
             placeholder={placeholder}
             onChange={handleChange}
             value={inputState.value}
@@ -45,7 +62,10 @@ const Input = ({ type = "text", placeholder = "", name, icon = null, validators 
           ></textarea>
         ) : (
           <input
-            className={`input ${!inputState.isValid && inputState.isTouched && 'is-danger'}`}
+            className={`input ${
+              !inputState.isValid && inputState.isTouched && "is-danger"
+            }`}
+            id={id}
             type={type}
             placeholder={placeholder}
             onChange={handleChange}

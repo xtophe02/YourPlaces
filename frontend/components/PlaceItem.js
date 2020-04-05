@@ -1,7 +1,8 @@
 import React from "react";
 import Modal from './Modal'
+import Link from 'next/link'
 
-const PlaceItem = ({ title, image, address, description, creatorId, coordinates }) => {
+const PlaceItem = ({ title, image, address, description, creatorId, coordinates, id }) => {
   const [state, setState] = React.useState(false)
   return (
     <div className="columns">
@@ -44,9 +45,11 @@ const PlaceItem = ({ title, image, address, description, creatorId, coordinates 
             </div>
 
             <div href="#" className="card-footer-item">
-              <a href="#" className="button is-link is-light is-fullwidth">
+              <Link href={`/editPlace/${id}`} >
+              <a className="button is-link is-light is-fullwidth">
                 Edit
               </a>
+              </Link>
             </div>
             <div href="#" className="card-footer-item">
               <a className="button is-danger is-light is-fullwidth">Delete</a>

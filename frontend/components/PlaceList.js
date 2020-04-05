@@ -18,6 +18,7 @@ const PlaceList = ({ places }) => {
             address={place.address}
             creatorId={place.creater}
             coordinates={place.location}
+            id={place.id}
           />
         ))
       )}
