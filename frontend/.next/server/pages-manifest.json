@@ -1,1 +1,1 @@
-{"/_app":"static/development/pages/_app.js","/_document":"static/development/pages/_document.js","/_error":"static/development/pages/_error.js","/editPlace/[editPlace]":"static/development/pages/editPlace/[editPlace].js"}
+{"/_app":"static/development/pages/_app.js","/_document":"static/development/pages/_document.js","/_error":"static/development/pages/_error.js","/editPlace/[editPlace]":"static/development/pages/editPlace/[editPlace].js","/userPlaces/[userPlaces]":"static/development/pages/userPlaces/[userPlaces].js"}

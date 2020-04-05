@@ -23,6 +23,10 @@
     "/editPlace/[editPlace]": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
+    ],
+    "/userPlaces/[userPlaces]": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
     ]
   }
 }

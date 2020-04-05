@@ -60,7 +60,7 @@ const NavBar = ({ title }) => {
             </a>
           </Link>
           <Link href="/addPlace">
-            <a className="navbar-item">Add Place</a>
+            <a className={`navbar-item ${title === "Add Place" && "is-active"}`}>Add Place</a>
           </Link>
 
           <div className="navbar-item">

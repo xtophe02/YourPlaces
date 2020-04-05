@@ -321,7 +321,7 @@ var NavBar = function NavBar(_ref) {
       columnNumber: 11
     }
   }, __jsx("a", {
-    className: "navbar-item",
+    className: "navbar-item ".concat(title === "Add Place" && "is-active"),
     __self: _this,
     __source: {
       fileName: _jsxFileName,
