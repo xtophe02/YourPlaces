@@ -4,6 +4,7 @@ import Layout from "../components/Layout";
 import { users } from "../data";
 
 const Home = () => {
+  console.log(process.env.TEST)
   return (
     <Layout title="Users" subtitle="list of current users">
       <div className="columns">

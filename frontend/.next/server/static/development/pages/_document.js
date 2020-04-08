@@ -336,29 +336,6 @@ function cleanAmpPath(pathname) {
     return pathname;
 }
 exports.cleanAmpPath = cleanAmpPath;
-function collectEnv(page, env, pageEnv) {
-    const missingEnvKeys = new Set();
-    const collected = pageEnv
-        ? pageEnv.reduce((prev, key) => {
-            if (typeof env[key] !== 'undefined') {
-                prev[key] = env[key];
-            }
-            else {
-                missingEnvKeys.add(key);
-            }
-            return prev;
-        }, {})
-        : {};
-    if (missingEnvKeys.size > 0) {
-        console.warn(`Missing env value${missingEnvKeys.size === 1 ? '' : 's'}: ${[
-            ...missingEnvKeys,
-        ].join(', ')} for ${page}.\n` +
-            `Make sure to supply this value in either your .env file or in your environment.\n` +
-            `See here for more info: https://err.sh/next.js/missing-env-value`);
-    }
-    return collected;
-}
-exports.collectEnv = collectEnv;
 
 
 /***/ }),
@@ -1152,7 +1129,7 @@ class MyDocument extends next_document__WEBPACK_IMPORTED_MODULE_1___default.a {
         columnNumber: 11
       }
     }), __jsx("script", {
-      src: "https://maps.googleapis.com/maps/api/js?key=AIzaSyDSTdxSQDqIuRj4KEH6HsfKggN7_Djc5BM",
+      src: `https://maps.googleapis.com/maps/api/js?key=${"AIzaSyDSTdxSQDqIuRj4KEH6HsfKggN7_Djc5BM"}`,
       async: true,
       defer: true,
       __self: this,

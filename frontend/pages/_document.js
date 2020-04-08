@@ -20,7 +20,7 @@ class MyDocument extends Document {
             defer
             src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
           ></script>
-           <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSTdxSQDqIuRj4KEH6HsfKggN7_Djc5BM"
+           <script src={`https://maps.googleapis.com/maps/api/js?key=${process.env.GOOGLE_MAPS_API_KEY}`}
     async defer></script>
 
         </Head>
