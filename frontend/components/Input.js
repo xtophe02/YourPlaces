@@ -10,7 +10,8 @@ const Input = ({
   id,
   onInput,
   value,
-  valid
+  valid,
+  errorText
 }) => {
   const inputReducer = (state, action) => {
     switch (action.type) {
@@ -80,7 +81,7 @@ const Input = ({
         )}
       </div>
       {!inputState.isValid && inputState.isTouched && (
-        <p className="help is-danger">This {name} is invalid</p>
+        <p className="help is-danger">{errorText}</p>
       )}
     </div>
   );

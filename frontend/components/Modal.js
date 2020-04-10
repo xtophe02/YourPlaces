@@ -37,12 +37,12 @@ const Modal = ({ state, dispatch, coordinates }) => {
               </div>
               <div className="message-body">
                 Are you sure do you want to delete?
-                <div class="field is-grouped is-grouped-centered">
-                  <p class="control">
-                    <a class="button is-danger is-outlined">Confirm</a>
+                <div className="field is-grouped is-grouped-centered">
+                  <p className="control">
+                    <a className="button is-danger is-outlined">Confirm</a>
                   </p>
-                  <p class="control">
-                    <a onClick={() => dispatch({ type: "DELETE" })} class="button is-info is-outlined">Cancel</a>
+                  <p className="control">
+                    <a onClick={() => dispatch({ type: "DELETE" })} className="button is-info is-outlined">Cancel</a>
                   </p>
                 </div>
               </div>

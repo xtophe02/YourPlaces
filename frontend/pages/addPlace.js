@@ -38,6 +38,7 @@ function addPlace() {
           icon="fa-landmark"
           onInput={inputHandler}
           validators={[VALIDATOR_REQUIRE()]}
+          errorText='This title is invalid'
         />
         <Input
           id="description"
@@ -46,6 +47,7 @@ function addPlace() {
           placeholder="About the place"
           onInput={inputHandler}
           validators={[VALIDATOR_MINLENGTH(5)]}
+          errorText='Should have at least 5 characters'
         />
         <Input
           id="address"
@@ -54,6 +56,7 @@ function addPlace() {
           icon="fa-map-marked-alt"
           onInput={inputHandler}
           validators={[VALIDATOR_REQUIRE()]}
+          errorText='This address is invalid'
         />
         <div className="control">
           <button className="button is-primary" disabled={!formState.isValid}>

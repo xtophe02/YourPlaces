@@ -65,9 +65,11 @@ const NavBar = ({ title }) => {
 
           <div className="navbar-item">
             <div className="buttons">
+            <Link href="/authenticate">
               <a className="button is-primary">
                 <strong>Authenticate</strong>
               </a>
+              </Link>
             </div>
           </div>
         </div>
