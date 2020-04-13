@@ -44,8 +44,9 @@ export const validate = (value, validators) => {
       isValid = isValid && /^\S+@\S+\.\S+$/.test(value);
     }
     if (validator.type === VALIDATOR_TYPE_IDENTICAL) {
-      console.log('validator',validator)
-      console.log('value',value)
+      // console.log('validator',validator.val[0].value)
+      // console.log('value',value)
+      isValid = isValid && value === validator.val[0].value;
     }
   }
   return isValid;

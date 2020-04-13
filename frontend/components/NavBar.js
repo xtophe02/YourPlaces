@@ -1,9 +1,13 @@
 import React from "react";
 import Link from "next/link";
 import { CSSTransition } from 'react-transition-group';
+import {AuthContext} from '../context/auth'
 
-const NavBar = ({ title }) => {
+const NavBar = ({title}) => {
+  const auth = React.useContext(AuthContext)
+ 
   const [activeItem, setActiveItem] = React.useState(false);
+  
   return (
     <nav
       className="navbar is-dark is-fixed-top"
@@ -51,27 +55,40 @@ const NavBar = ({ title }) => {
               All Users
             </a>
           </Link>
-
-          <Link href="/userPlaces">
+{auth.isLoggedIn && <Link href="/userPlaces">
             <a
               className={`navbar-item ${title === "My Places" && "is-active"}`}
             >
               My Places
             </a>
-          </Link>
-          <Link href="/addPlace">
+          </Link>}
+          {auth.isLoggedIn && <Link href="/addPlace">
             <a className={`navbar-item ${title === "Add Place" && "is-active"}`}>Add Place</a>
           </Link>
-
+}
+          {!auth.isLoggedIn &&
           <div className="navbar-item">
-            <div className="buttons">
-            <Link href="/authenticate">
-              <a className="button is-primary">
-                <strong>Authenticate</strong>
-              </a>
-              </Link>
-            </div>
+          <div className="buttons">
+          <Link href="/authenticate">
+            <a className="button is-primary">
+              <strong>Authenticate</strong>
+            </a>
+            </Link>
           </div>
+        </div>
+          }
+          {auth.isLoggedIn &&
+          <div className="navbar-item">
+          <div className="buttons">
+          
+            <a className="button is-danger" onClick={auth.logout}>
+              <strong>Logout</strong>
+            </a>
+           
+          </div>
+        </div>
+          }
+          
         </div>
       </div>
       {/* </CSSTransition> */}

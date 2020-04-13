@@ -4,7 +4,8 @@ import Input from "../components/Input";
 import { VALIDATOR_REQUIRE, VALIDATOR_MINLENGTH } from "../utils/validators";
 import { useForm } from "../hooks/useForm";
 
-function addPlace() {
+function addPlace(props) {
+  console.log(props)
   const [formState, inputHandler] = useForm(
     {
       title: {
