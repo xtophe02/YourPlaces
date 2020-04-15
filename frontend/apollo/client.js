@@ -150,8 +150,8 @@ function createIsomorphLink(ctx) {
     const adjustedUri = !isServer() && process.env.NODE_ENV === 'development' ? process.env.API_URI : process.env.API_URI_DOCKER
     // console.log('adjustedUri: ', adjustedUri)
     return new HttpLink({
-    //   uri: `${adjustedUri}/graphql`,
-      uri: 'http://localhost:3000',
+      uri: `${adjustedUri}/graphql`,
+      // uri: 'http://localhost:3000',
       credentials: 'included',
       fetch
     })

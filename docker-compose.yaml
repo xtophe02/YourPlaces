@@ -19,17 +19,17 @@ services:
     #   database__connection__password: YOURDBPASSWORDhere
     #   database__connection__database: ghost
 
-#   api:
-#     build:
-#       context: ./api
-#       dockerfile: Dockerfile.dev
-#     ports:
-#       - 4000:4000
-#     depends_on:
-#       - mongo
-#     volumes:
-#       - /app/node_modules
-#       - ./api/:/app/:delegated
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile.dev
+    ports:
+      - 4000:4000
+    # depends_on:
+    #   - mongo
+    volumes:
+      - /app/node_modules
+      - ./backend/:/app/:delegated
 #   mongo:
 #     image: mongo:4
 #     volumes:
