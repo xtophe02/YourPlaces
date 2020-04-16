@@ -1,8 +1,8 @@
 import React from 'react'
 import Head from 'next/head'
 import { ApolloProvider } from '@apollo/client'
-import { ApolloClient } from '@apollo/client'
-import { InMemoryCache } from 'apollo-cache-inmemory'
+import { ApolloClient } from 'apollo-client'
+import { InMemoryCache } from '@apollo/client'
 import fetch from 'isomorphic-unfetch'
 
 let globalApolloClient = null
@@ -66,7 +66,7 @@ export function withApollo(PageComponent, { ssr = true } = {}) {
         if (ssr) {
           try {
             // Run all GraphQL queries
-            const { getDataFromTree } = await import('@apollo/client')
+            const { getDataFromTree } = await import('@apollo/react-ssr')
             await getDataFromTree(
               <AppTree
                 pageProps={{
@@ -145,14 +145,14 @@ function createIsomorphLink(ctx) {
   //   const { schema } = require('./schema')
   //   return new SchemaLink({ schema, context: ctx })
   // } else {
-    const { HttpLink } = require('apollo-link-http')
+    const { HttpLink } = require('@apollo/client')
     const isServer = () => typeof window === `undefined`
     const adjustedUri = !isServer() && process.env.NODE_ENV === 'development' ? process.env.API_URI : process.env.API_URI_DOCKER
     // console.log('adjustedUri: ', adjustedUri)
     return new HttpLink({
       uri: `${adjustedUri}/graphql`,
       // uri: 'http://localhost:3000',
-      credentials: 'included',
+      credentials: 'same-origin',
       fetch
     })
   // }

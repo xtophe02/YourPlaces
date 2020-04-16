@@ -5,6 +5,7 @@ exports.typeDefs = gql`
     hello: String
     users: [User]
     userPlaces: [Place]
+    place(id:ID!): Place!
   }
 
   type Mutation {
@@ -31,8 +32,8 @@ exports.typeDefs = gql`
   }
 
   type Location {
-    lat: String
-    lng: String
+    lat: Float
+    lng: Float
   }
 
   input UserInput{

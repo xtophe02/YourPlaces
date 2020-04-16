@@ -1,6 +1,6 @@
 import React, { useCallback } from 'react'
 import { AuthContext } from "../context/auth";
-// import {withApollo} from '../apollo/client'
+import {withApollo} from '../apollo/client'
 
 const MyApp = ({ Component, pageProps }) => {
     const [isLoggedIn, setIsLoggedIn] = React.useState(false)
@@ -11,9 +11,9 @@ const MyApp = ({ Component, pageProps }) => {
         setIsLoggedIn(false)
     },[])
   return (
-    <AuthContext.Provider value={{isLoggedIn, login, logout}}>
+    // <AuthContext.Provider value={{isLoggedIn, login, logout}}>
       <Component {...pageProps}  />
-    </AuthContext.Provider>
+    // </AuthContext.Provider>
   );
 };
 
@@ -29,4 +29,5 @@ const MyApp = ({ Component, pageProps }) => {
 //   return { ...appProps }
 // }
 
-export default MyApp;
+export default withApollo(MyApp);
+// export default MyApp;
