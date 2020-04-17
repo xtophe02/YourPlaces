@@ -3,6 +3,7 @@ import UserItem from "./UserItem";
 
 
 const UsersList = ({ users }) => {
+  // console.log(users)
   return (
     <>
       {users.length === 0 ? (
@@ -10,7 +11,7 @@ const UsersList = ({ users }) => {
       ) : (
         users.map(user => 
            
-        <UserItem key={user.id} name={user.name} image={user.image} places={user.places} id={user.id}/>
+        <UserItem key={user.id} name={user.name} image={user.imageUrl} places={user.places.length} id={user.id}/>
        
         )
       )}

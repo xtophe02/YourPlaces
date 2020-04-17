@@ -9,7 +9,7 @@ exports.typeDefs = gql`
   }
 
   type Mutation {
-    createUser(data: UserInput): User
+    createUser(data: UserInput): Token
     createPlace(data: PlacesInput): [Place]
   }
   
@@ -32,10 +32,12 @@ exports.typeDefs = gql`
   }
 
   type Location {
-    lat: Float
-    lng: Float
+    lat: String
+    lng: String
   }
-
+  type Token{
+    token: String
+  }
   input UserInput{
     name: String
     email: String

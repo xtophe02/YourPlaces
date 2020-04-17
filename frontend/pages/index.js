@@ -1,27 +1,33 @@
 import React from "react";
 import UsersList from "../components/UsersList";
 import Layout from "../components/Layout";
-import { users } from "../data";
+// import { users } from "../data";
 import { gql, useQuery } from "@apollo/client";
-import {withApollo} from '../apollo/client'
 
-const HELLO = gql`
-  query Hello {
-    hello
+const USERS = gql`
+  query Users {
+  users{
+    id
+    name
+    places{
+      id
+    }
+    imageUrl
   }
+}
 `;
 
 const Home = () => {
-  const { loading, error, data } = useQuery(HELLO);
-  console.log(data)
+  const { loading, error, data } = useQuery(USERS);
+  
   if (loading) return <p>Loading ...</p>;
   return (
     <Layout title="Users" subtitle="list of current users">
       <div className="columns">
         <div className="column"></div>
         <div className="column is-half">
-          <h1>{data.hello}</h1>
-          <UsersList users={users} />
+         {data && <UsersList users={data.users} />}
+          
         </div>
         <div className="column"></div>
       </div>

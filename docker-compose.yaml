@@ -25,19 +25,19 @@ services:
       dockerfile: Dockerfile.dev
     ports:
       - 4000:4000
-    # depends_on:
-    #   - mongo
+    depends_on:
+      - mongo
     volumes:
       - /app/node_modules
       - ./backend/:/app/:delegated
-#   mongo:
-#     image: mongo:4
-#     volumes:
-#       #GOOD: created a named volume so our data is kept between docker-compose ups
-#       - mongo:/data/db
-#     ports:
-#       - "27017:27017"
-#     command: --quiet
-#     # command: mongod --smallfiles --logpath=/dev/null # --quiet
-# volumes:
-#   mongo:
+  mongo:
+    image: mongo:4
+    volumes:
+      #GOOD: created a named volume so our data is kept between docker-compose ups
+      - mongo:/data/db
+    ports:
+      - "27017:27017"
+    command: --quiet
+    # command: mongod --smallfiles --logpath=/dev/null # --quiet
+volumes:
+  mongo:
