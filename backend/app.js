@@ -8,7 +8,8 @@ const connectDb = require("./db");
 const {typeDefs} = require('./graphql/typeDefs')
 const resolvers = require('./graphql/resolvers')
 const getUserId = require('./utils/getUserId')
-const UserModel = require("./models/User");
+const UserModel = require("./models/UserModel");
+const PlaceModel = require("./models/PlaceModel");
 
 const app = express()
 
@@ -18,7 +19,7 @@ app.use(cors({origin: "http://localhost:3000", credentials:true}))
 
 const context = ({req, res}) => {
   
-  return {user: getUserId(req), UserModel};
+  return {user: getUserId(req), UserModel, PlaceModel};
 }
 
 const server = new ApolloServer({

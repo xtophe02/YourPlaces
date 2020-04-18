@@ -10,7 +10,8 @@ exports.typeDefs = gql`
 
   type Mutation {
     createUser(data: UserInput): Token
-    createPlace(data: PlacesInput): [Place]
+    createPlace(data: PlacesInput): Place
+    login(data:LoginInput): Token
   }
   
   type Place {
@@ -37,6 +38,10 @@ exports.typeDefs = gql`
   }
   type Token{
     token: String
+  }
+  input LoginInput {
+    email: String
+    password: String
   }
   input UserInput{
     name: String

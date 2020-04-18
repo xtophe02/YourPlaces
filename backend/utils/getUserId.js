@@ -6,9 +6,9 @@ const getUserId = (req) => {
   
 
   if (token) {
-    console.log('token: ',token)
-    const user = jwt.verify(token, process.env.JWT_SECRET);
-    return user;
+    // console.log('token: ',token)
+    return jwt.verify(token, process.env.JWT_SECRET);
+   ;
   }
   return null;
 };

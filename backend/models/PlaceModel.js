@@ -27,8 +27,8 @@ const PlaceSchema = new mongoose.Schema({
     ref: "users",
   },
   coordinates: {
-    type: Schema.Types.ObjectId,
-    ref: 'locations'
+    lat: { type: Number, required: true },
+    lng: { type: Number, required: true }
   }
 });
 

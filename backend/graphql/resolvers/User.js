@@ -3,7 +3,12 @@ const {places} = require('../../data')
 
 exports.User = {
  
-  places: (parent, args, ctx, info) => places.filter(place => parent.id === place.creator)
+  places: async (parent, args, { user, PlaceModel }, info) => {
+    if (!user) {
+      throw new Error("need to be authenticated");
+    }
+    return await PlaceModel.find({ creator: user.id });
+  },
   
  
 };
