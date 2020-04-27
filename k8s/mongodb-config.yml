@@ -1,0 +1,47 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mongodb-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      component: mongodb
+  template:
+    metadata:
+      labels:
+        component: mongodb
+    spec:
+      volumes:
+        - name: mongodb-storage
+          persistentVolumeClaim:
+            claimName: database-pvc
+      containers:
+        - name: mongodb
+          image: mongodb
+          ports:
+            - containerPort: 27017
+          volumeMounts:
+            - name: mongodb-storage
+              mountPath: /data/db
+              # subPath: postgres
+          # env:
+          #   - name: POSTGRES_PASSWORD
+          #     valueFrom:
+          #       secretKeyRef:
+          #         name: pgpassword
+          #         key: PGPASSWORD
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: mongodb-cluster-ip-service
+spec:
+  type: ClusterIP
+  # type: NodePort
+  ports:
+    - port: 27017
+      targetPort: 27017
+      # nodePort: 31515
+  selector:
+    component: mongodb

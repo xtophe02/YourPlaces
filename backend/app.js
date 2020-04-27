@@ -13,7 +13,12 @@ const PlaceModel = require("./models/PlaceModel");
 
 const app = express()
 
-app.use(cors({origin: "http://localhost:3000", credentials:true}))
+const corsOpt = {
+  origin: '*',
+  credentials:true
+}
+
+app.use(cors())
 
 
 
@@ -30,7 +35,7 @@ const server = new ApolloServer({
 
 server.applyMiddleware({ app });
 
-connectDb();
+// connectDb();
 
 app.listen(PORT, () =>
   console.log(`🚀 Server ready at http://localhost:${PORT}`)

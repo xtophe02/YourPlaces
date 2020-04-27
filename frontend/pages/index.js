@@ -6,28 +6,33 @@ import { gql, useQuery } from "@apollo/client";
 
 const USERS = gql`
   query Users {
-  users{
-    id
-    name
-    places{
-      id
-    }
-    imageUrl
-  }
+  hello
 }
 `;
+// const USERS = gql`
+//   query Users {
+//   users{
+//     id
+//     name
+//     places{
+//       id
+//     }
+//     imageUrl
+//   }
+// }
+// `;
 
 const Home = () => {
   const { loading, error, data } = useQuery(USERS);
-  
+  console.log(data)
   if (loading) return <p>Loading ...</p>;
   return (
     <Layout title="Users" subtitle="list of current users">
       <div className="columns">
         <div className="column"></div>
         <div className="column is-half">
-         {data && <UsersList users={users} />}
-          
+         {/* {data && <UsersList users={users} />} */}
+          {data && <p>{data.hello}</p> }
         </div>
         <div className="column"></div>
       </div>
