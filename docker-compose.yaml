@@ -1,4 +1,4 @@
-version: '3.4'
+version: "3.4"
 
 services:
   frontend:
@@ -7,8 +7,8 @@ services:
       dockerfile: Dockerfile.dev
     ports:
       - 3000:3000
-    # depends_on:
-    #   - api
+    depends_on:
+      - backend
     volumes:
       - /app/node_modules
       - ./frontend/:/app/:delegated
@@ -27,8 +27,6 @@ services:
       dockerfile: Dockerfile.dev
     ports:
       - 4000:4000
-    depends_on:
-      - mongo1
       # - mongo2
       # - mongo3
     volumes:
@@ -36,50 +34,3 @@ services:
       - ./backend/:/app/:delegated
     # networks:
     #   - mongo-dev-net
-  mongo1:
-    image: mongo:4
-    volumes:
-      #GOOD: created a named volume so our data is kept between docker-compose ups
-      - mongo1:/data/db
-    # networks:
-    #   - mongo-dev-net
-    ports:
-      - "30001:27017"
-    # expose:
-    #   - 27017
-    # command: --quiet
-    command: mongod --port 30001
-    # command: mongod --smallfiles --logpath=/dev/null # --quiet
-    # entrypoint: [ "/usr/bin/mongod", "--bind_ip_all", "--replSet", "devrs" ]
-  # mongo2:
-  #   image: mongo:4
-  #   volumes:
-  #     #GOOD: created a named volume so our data is kept between docker-compose ups
-  #     - mongo2:/data/db
-  #   # networks:
-  #   #   - mongo-dev-net
-  #   ports:
-  #     - "30002:27017"
-  #   command: mongod --port 30002
-  #   # command: mongod --smallfiles --logpath=/dev/null # --quiet
-  #   entrypoint: [ "/usr/bin/mongod", "--bind_ip_all", "--replSet", "devrs" ]
-  # mongo3:
-  #   image: mongo:4
-  #   volumes:
-  #     #GOOD: created a named volume so our data is kept between docker-compose ups
-  #     - mongo3:/data/db
-  #   # networks:
-  #   #   - mongo-dev-net
-  #   ports:
-  #     - "30003:27017"
-  #   command: mongod --port 30003
-  #   # command: mongod --smallfiles --logpath=/dev/null # --quiet
-  #   entrypoint: [ "/usr/bin/mongod", "--bind_ip_all", "--replSet", "devrs" ]
-
-volumes:
-  mongo1:
-  mongo2:
-  mongo3:
-
-# networks:
-#   mongo-dev-net:
